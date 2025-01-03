@@ -8,7 +8,7 @@
 ```
 ## To deploy the application using helm chart
 ```bash
-  helm install node-app ./node-app --namespace web
+  helm install node-app ./node-app -n web
 ```
 ## To check the running application pods
 ```bash
@@ -30,6 +30,11 @@
 ```bash
   kubectl logs <pod> -n web
 ```
+## To upgrade the release after modification of values.yaml file
+```bash
+  helm upgrade node-app ./node-app -n web
+```
+
 ## To check the type of deployment and replicas
 ```bash
   kubectl -n web get deployment node-app -o yaml
