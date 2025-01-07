@@ -1,0 +1,11 @@
+[Unit]
+Description=Simple Node.js HTTP Server
+After=network.target
+
+[Service]
+User=ubuntu
+ExecStart=/usr/bin/node /path/to/server.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

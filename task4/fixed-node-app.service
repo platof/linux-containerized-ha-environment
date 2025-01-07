@@ -1,0 +1,13 @@
+[Unit]
+Description=Simple Node.js HTTP Server
+After=network.target
+
+[Service]
+User=ubuntu
+ExecStart=/usr/bin/node /home/ubuntu/my-node-service/server.js
+Restart=always
+StandardOutput=file:/home/ubuntu/my-node-service/access.log
+StandardError=file:/home/ubuntu/my-node-service/error.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Simple Node.js HTTP Server
+After=network.target
+
+[Service]
+User=<USER>
+WorkingDirectory=<WORKING_DIRECTORY>
+ExecStart=/usr/bin/node server.js
+Restart=always
+StandardOutput=file:<LOG_DIRECTORY>/access.log
+StandardError=file:<LOG_DIRECTORY>/error.log
+
+[Install]
+WantedBy=multi-user.target
