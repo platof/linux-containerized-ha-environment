@@ -7,4 +7,4 @@
 - Kubernetes/Helm chart
 - Talos
 
-## In each of the tasks there are further instructions for the deployment and troubleshooting.
+### In each of the tasks there are further instructions for the deployment and troubleshooting.

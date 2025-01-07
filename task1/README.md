@@ -9,7 +9,7 @@
   git clone https://github.com/platof/linux-containerized-ha-environment.git
    cd task1
 ```
-## In the node-service.service file ensure to put in the right user, working directory and log directory and this file should be in systemd directory.
+### In the node-service.service file ensure to put in the right user, working directory and log directory and this file should be in systemd directory.
 
 ## Reload the service after creation of server.js and systemd service file
 ```bash
@@ -56,5 +56,5 @@
   [Install]
   WantedBy=multi-user.target
 ```
-## Troubleshooting
+### Troubleshooting
 If you encounter port conflicts, ensure that no other services are using the same ports.

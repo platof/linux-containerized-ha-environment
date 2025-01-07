@@ -9,7 +9,7 @@
    git clone https://github.com/platof/linux-containerized-ha-environment.git
    cd task3
 ```
-## The values.yaml file contains values which can be modified accordingly 
+### The values.yaml file contains values which can be modified accordingly 
 
 ## create a namespace for the appliction
 ```bash

@@ -40,5 +40,5 @@
 ```bash
   docker push platof/node-server:<tag>
 ```
-## Troubleshooting
+### Troubleshooting
 If you encounter port conflicts, ensure that no other services are using the same ports. You can change the ports in the docker-compose.yml file if needed.
